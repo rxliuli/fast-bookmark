@@ -8,7 +8,10 @@ A Chrome extension for quickly saving bookmarks with folder autocomplete and sma
 - **Autocomplete**: Intelligent folder name autocomplete for easy selection
 - **History-based Sorting**: Recently used folders appear first in suggestions
 - **Manifest V3 Compatible**: Works with the latest Chrome versions
-- **Browser Support**: Chrome, Edge, Safari, and Firefox
+- **Browser Support**: Chrome, Edge, and Firefox
+
+> Safari is not supported because it doesn't support `bookmarks` api.
+> <https://stackoverflow.com/questions/4820051/5011015>
 
 ## Usage
 
