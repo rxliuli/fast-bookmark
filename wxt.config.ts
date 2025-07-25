@@ -15,7 +15,7 @@ export default defineConfig({
   manifest: (env) => {
     const manifest: UserManifest = {
       name: 'Fast Bookmark',
-      description: 'Add bookmark super fast',
+      description: 'Quick Save with Smart Folders',
       permissions: ['activeTab', 'bookmarks'],
       author: {
         email: 'rxliuli@gmail.com',
