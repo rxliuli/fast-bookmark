@@ -14,11 +14,9 @@ export default defineConfig({
   manifestVersion: 3,
   manifest: (env) => {
     const manifest: UserManifest = {
-      name: 'Browser Extension Template',
-      description:
-        'A template for WXT, a WebExtension framework based on Vite and React',
-      permissions: ['storage'],
-      host_permissions: ['<all_urls>'],
+      name: 'Fast Bookmark',
+      description: 'Add bookmark super fast',
+      permissions: ['activeTab', 'bookmarks'],
       author: {
         email: 'rxliuli@gmail.com',
       },
@@ -31,7 +29,7 @@ export default defineConfig({
           '128': 'icon/128.png',
         },
       },
-      homepage_url: 'https://rxliuli.com/projects/browser-extension-template',
+      homepage_url: 'https://rxliuli.com/projects/fast-bookmark',
     }
     if (env.browser === 'firefox') {
       manifest.browser_specific_settings = {
