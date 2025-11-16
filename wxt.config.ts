@@ -41,6 +41,14 @@ export default defineConfig({
       // https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/author
       // @ts-expect-error
       manifest.author = 'rxliuli'
+      manifest.commands = {
+        _execute_action: {
+          suggested_key: {
+            default: 'Ctrl+D',
+            mac: 'Command+D',
+          },
+        },
+      }
     }
     return manifest
   },
